@@ -10,48 +10,28 @@ void main() {
   List<int> numbers1 = [1, 2, 3, 4, 5];
   print(numbers1);
 
-  // Add element at the end of the list
-  numbers1.add(6);
+// 💨💨💨💨💨 PROPERTIES OF LIST 💨💨💨💨💨
 
-  // Add element at the specific index
-  numbers1.insert(0, 0);
-
-  // Add multiple elements at the end of the list
-  numbers1.addAll([7, 8, 9]);
-
-  // Remove element from the list
-  numbers1.remove(9);
-
-  // Remove element from the specific index
-  numbers1.removeAt(0);
-
-  // Remove last element from the list
-  numbers1.removeLast();
-
-  // Remove all elements from the list
-  // numbers1.clear();
-
-  // Update element at the specific index
-  numbers1[0] = 0;
-
-  // Update multiple elements at the specific index
-  numbers1.replaceRange(0, 2, [0, 1]);
-
-  // Update all elements of the list
-  numbers1.fillRange(0, 2, 0);
-
-  // Sort the list
-  numbers1.sort();
-
-  // Reverse the list (returns in a new list)
-  var newList = numbers1.reversed;
-  print(newList);
+  // first: It returns the first element in the List.
+  numbers1.first;
+// last: It returns the last element in the List.
+  numbers1.last;
 
   // Check if the list is empty
   numbers1.isEmpty;
 
   // Check if the list is not empty
   numbers1.isNotEmpty;
+
+  // length: It returns the length of the List.
+  numbers1.length;
+
+  // Reverse the list (returns in a new list)
+  var newList = numbers1.reversed;
+  print(newList);
+
+  // single: It is used to check if the List has only one element and returns it.
+  numbers1.single;
 
   // Check if the list contains the element
   numbers1.contains(1);
@@ -64,31 +44,4 @@ void main() {
 
   // Check the length of the list
   numbers1.length;
-
-  // Advanced List Methods
-
-  // Map - returns a new list
-  numbers1.map((e) => e * 2).toList();
-
-  // forEach - print each element of the list
-  numbers1.forEach((element) {
-    print(element);
-  });
-
-  // where - returns a new list with the elements that satisfy the condition
-  numbers1.where((element) => element > 2).toList();
-
-  // any - returns true if any element of the list satisfies the condition
-  numbers1.any((element) => element > 2);
-
-  // every - returns true if every element of the list satisfies the condition
-  numbers1.skipWhile((value) => value > 2).toList();
-
-  // Dart Iterating List elements
-
-  var list2 = ["Smith", "Peter", "Handscomb", "Devansh", "Cruise"];
-  print("Iterating the List Element");
-  list2.forEach((item) {
-    print("${list2.indexOf(item)}: $item");
-  });
 }

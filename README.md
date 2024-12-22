@@ -37,3 +37,7 @@ A collection of Dart examples and methods to demonstrate list manipulation and o
    ```bash
    dart <filename>.dart
    ```
+
+## Contributions
+
+Contributions are welcome! If you have additional examples or improvements, feel free to fork this repository and create a pull request.

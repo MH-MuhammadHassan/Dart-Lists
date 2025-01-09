@@ -87,7 +87,3 @@ This project is ideal for:
 ## License
 
 This project is open-source and available for educational purposes. Feel free to modify and use it as per your requirements.
-
----
-
-Let me know if you'd like any additional details or modifications!
